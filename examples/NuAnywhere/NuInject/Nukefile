@@ -11,7 +11,7 @@
          ;; Get it at git://github.com/rentzsch/mach_star.git
          (if (isSnowLeopard)
             (then (set @cflags "-isysroot /Developer/SDKs/MacOSX10.6.sdk "))
-            (else (set @cflags "-isysroot /Developer/SDKs/MacOSX10.7.sdk ")))
+            (else (set @cflags "-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk ")))
          (set @ldflags " -framework Cocoa -framework Nu -framework Carbon -framework mach_inject_bundle")
          (set @arch '("x86_64" )))
     (else
